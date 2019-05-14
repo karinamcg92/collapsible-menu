@@ -1,0 +1,125 @@
+<style type="text/css">.half {
+    float: left;
+    width: 100%;
+}
+/* Acordeon styles */
+.tab {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #282828;
+    overflow: hidden;
+}
+.faq input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+label {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    background: #eeeeee;
+    font-weight: bold;
+    cursor: pointer;
+}
+label:hover {
+    background: #dedede;
+}
+.tab-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #fefefe;
+    -webkit-transition: max-height .55s;
+    -o-transition: max-height .55s;
+    transition: max-height .55s;
+}
+.tab-content p {
+    margin: 1em;
+}
+/* :checked */
+input:checked ~ .tab-content {
+    max-height: 100%;
+}
+/* Icon */
+label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5;
+    text-align: center;
+    -webkit-transition: all .55s;
+    -o-transition: all .55s;
+    transition: all .55s;
+}
+input[type=checkbox] + label::after {
+    content: "+";
+}
+input[type=checkbox]:checked + label::after {
+    transform: rotate(315deg);
+}
+</style>
+<div class="content-block">
+<h2>Main Heading</h2>
+
+<h3>Sub Heading One</h3>
+
+<div class="faq">
+<div class="half">
+<div class="tab"><input id="tab-one" name="tabs" type="checkbox" /> <label for="tab-one">Collapsible Tab 1</label>
+
+<div class="tab-content">
+<p>Liquorice candy canes icing marshmallow carrot cake macaroon danish icing marshmallow. Donut lemon drops chocolate cake. Macaroon wafer halvah cake lollipop. Caramels wafer jujubes icing chupa chups. Powder bear claw gummi bears cheesecake pie icing bonbon. Candy canes soufflé chocolate cake biscuit jelly beans marshmallow wafer. Pie gummi bears lemon drops topping marshmallow jelly-o cake.</p>
+<p>Pastry cotton candy carrot cake candy canes. Wafer lollipop croissant brownie gingerbread oat cake muffin marzipan muffin. Pudding marzipan cookie croissant tootsie roll. Oat cake tart macaroon macaroon dessert apple pie jelly beans pastry bear claw. Croissant donut tart topping bear claw fruitcake donut lemon drops. Pudding dragée sesame snaps dessert pie pastry powder powder.</p>
+</div>
+</div>
+
+<div class="tab"><input id="tab-two" name="tabs" type="checkbox" /> <label for="tab-two">Collapsible Tab 2</label>
+
+<div class="tab-content">
+<p>Liquorice candy canes icing marshmallow carrot cake macaroon danish icing marshmallow. Donut lemon drops chocolate cake. Macaroon wafer halvah cake lollipop. Caramels wafer jujubes icing chupa chups. Powder bear claw gummi bears cheesecake pie icing bonbon. Candy canes soufflé chocolate cake biscuit jelly beans marshmallow wafer. Pie gummi bears lemon drops topping marshmallow jelly-o cake.</p>
+<p>Pastry cotton candy carrot cake candy canes. Wafer lollipop croissant brownie gingerbread oat cake muffin marzipan muffin. Pudding marzipan cookie croissant tootsie roll. Oat cake tart macaroon macaroon dessert apple pie jelly beans pastry bear claw. Croissant donut tart topping bear claw fruitcake donut lemon drops. Pudding dragée sesame snaps dessert pie pastry powder powder.</p>
+</div>
+</div>
+
+<div class="tab"><input id="tab-three" name="tabs" type="checkbox" /> <label for="tab-three">Collapsible Tab 3</label>
+
+<div class="tab-content">
+<p>Liquorice candy canes icing marshmallow carrot cake macaroon danish icing marshmallow. Donut lemon drops chocolate cake. Macaroon wafer halvah cake lollipop. Caramels wafer jujubes icing chupa chups. Powder bear claw gummi bears cheesecake pie icing bonbon. Candy canes soufflé chocolate cake biscuit jelly beans marshmallow wafer. Pie gummi bears lemon drops topping marshmallow jelly-o cake.</p>
+<p>Pastry cotton candy carrot cake candy canes. Wafer lollipop croissant brownie gingerbread oat cake muffin marzipan muffin. Pudding marzipan cookie croissant tootsie roll. Oat cake tart macaroon macaroon dessert apple pie jelly beans pastry bear claw. Croissant donut tart topping bear claw fruitcake donut lemon drops. Pudding dragée sesame snaps dessert pie pastry powder powder.</p>
+</div>
+</div>
+
+<h3>Sub Heading Two</h3>
+
+<div class="tab"><input id="tab-seven" name="tabs" type="checkbox" /> <label for="tab-seven">Collapsible Tab 1</label>
+
+<div class="tab-content">
+<p>Liquorice candy canes icing marshmallow carrot cake macaroon danish icing marshmallow. Donut lemon drops chocolate cake. Macaroon wafer halvah cake lollipop. Caramels wafer jujubes icing chupa chups. Powder bear claw gummi bears cheesecake pie icing bonbon. Candy canes soufflé chocolate cake biscuit jelly beans marshmallow wafer. Pie gummi bears lemon drops topping marshmallow jelly-o cake.</p>
+<p>Pastry cotton candy carrot cake candy canes. Wafer lollipop croissant brownie gingerbread oat cake muffin marzipan muffin. Pudding marzipan cookie croissant tootsie roll. Oat cake tart macaroon macaroon dessert apple pie jelly beans pastry bear claw. Croissant donut tart topping bear claw fruitcake donut lemon drops. Pudding dragée sesame snaps dessert pie pastry powder powder.</p>
+</div>
+</div>
+
+<div class="tab"><input id="tab-eight" name="tabs" type="checkbox" /> <label for="tab-eight">Collapsible Tab 2</label>
+
+<div class="tab-content">
+<p>Liquorice candy canes icing marshmallow carrot cake macaroon danish icing marshmallow. Donut lemon drops chocolate cake. Macaroon wafer halvah cake lollipop. Caramels wafer jujubes icing chupa chups. Powder bear claw gummi bears cheesecake pie icing bonbon. Candy canes soufflé chocolate cake biscuit jelly beans marshmallow wafer. Pie gummi bears lemon drops topping marshmallow jelly-o cake.</p>
+<p>Pastry cotton candy carrot cake candy canes. Wafer lollipop croissant brownie gingerbread oat cake muffin marzipan muffin. Pudding marzipan cookie croissant tootsie roll. Oat cake tart macaroon macaroon dessert apple pie jelly beans pastry bear claw. Croissant donut tart topping bear claw fruitcake donut lemon drops. Pudding dragée sesame snaps dessert pie pastry powder powder.</p>
+</div>
+</div>
+
+<div class="tab"><input id="tab-nine" name="tabs" type="checkbox" /> <label for="tab-nine">Collapsible Tab 3</label>
+
+<div class="tab-content">
+<p>Liquorice candy canes icing marshmallow carrot cake macaroon danish icing marshmallow. Donut lemon drops chocolate cake. Macaroon wafer halvah cake lollipop. Caramels wafer jujubes icing chupa chups. Powder bear claw gummi bears cheesecake pie icing bonbon. Candy canes soufflé chocolate cake biscuit jelly beans marshmallow wafer. Pie gummi bears lemon drops topping marshmallow jelly-o cake.</p>
+<p>Pastry cotton candy carrot cake candy canes. Wafer lollipop croissant brownie gingerbread oat cake muffin marzipan muffin. Pudding marzipan cookie croissant tootsie roll. Oat cake tart macaroon macaroon dessert apple pie jelly beans pastry bear claw. Croissant donut tart topping bear claw fruitcake donut lemon drops. Pudding dragée sesame snaps dessert pie pastry powder powder.</p>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
